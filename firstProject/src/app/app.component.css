@@ -1,0 +1,22 @@
+.head {
+  padding: 2em;
+}
+
+.mainNav {
+  text-align: center;
+  border-radius: 1em;
+  padding: 1em 3em;
+  margin: 1em auto;
+  width:60%;
+  background-color: #8136ad;
+}
+.navbar-item {
+  margin: 0 1em;
+}
+ .navbar-item:hover {
+  background-color: #702b99;
+  border-radius: 5px;
+}
+.nav-link:hover{
+  color: #fff !important;
+}

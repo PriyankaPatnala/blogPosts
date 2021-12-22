@@ -1,0 +1,30 @@
+<div class="jumbotron head text-center">
+  <h1>BlogHub</h1>
+  <h5><i>Pen down your thoughts and share with entire world</i></h5>
+</div>
+<div class="container-fluid">
+  <nav class="navbar navbar-expand-sm navbar-dark mainNav">
+    <a class="navbar-brand" href="">BlogHub</a>
+    <button type="button"
+            class="navbar-toggler"
+            data-toggle="collapse"
+            data-target="navSupportedContents"
+            aria-controls="navSupportedContents"
+            aria-label="Toggle Navigation"
+            aria-expanded="false">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navSupportedContents">
+      <ul class="navbar-nav mr-auto">
+        <li class="navbar-item">
+          <a class="nav-link" routerLink="/create">Create Blog</a>
+        </li>
+        <li class="navbar-item">
+          <a class="nav-link" routerLink="/list">Blogs</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</div>
+<router-outlet></router-outlet>

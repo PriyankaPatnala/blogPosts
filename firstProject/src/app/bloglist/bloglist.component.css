@@ -1,0 +1,10 @@
+.list {
+  padding:20px;
+  border: 2px solid rgb(233, 230, 226);
+  width: 80%;
+  margin: 30px auto;
+  background-color: #a494f3;
+}
+.bgList {
+  margin:2em auto 5em;
+}

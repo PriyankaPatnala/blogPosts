@@ -1,0 +1,13 @@
+<div class="container text-center bgList">
+  <h1>List of Blogs</h1>
+  <div *ngIf="blogsList.length ===0">
+    <div class="list">Be the first one to create a blog</div>
+  </div>
+  <div  *ngIf="blogsList.length !==0">
+    <div *ngFor="let blog of blogsList" class="list">
+      <div>{{blog.title}}</div>
+      <div>{{blog.description}}</div>
+      <div>{{blog.category}}</div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,28 @@
+<div class="card card-block container text-center bgForm">
+  <h4 class="card-title"> Create Blog</h4>
+  <form class="card-body" #blogform="ngForm" (ngSubmit)="onFormSubmit(blogform.value)">
+    <div class="form-group row">
+      <input type="text"
+             placeholder="Enter title"
+             name="title"
+             class="form-control col-sm-12 col-md-12 col-lg-12"
+             required
+             ngModel>
+    </div>
+    <div class="form-group row">
+      <input type="text"
+             placeholder="Enter description"
+             name="description"
+             required
+             class="form-control col-sm-12 col-md-12 col-lg-12"
+             ngModel>
+    </div>
+    <div class="form-group row">
+      <select name="category" ngModel class="col-sm-12 col-md-12 col-lg-12">
+        <option value="default">Select a Category</option>
+        <option *ngFor="let category of categories" value="{{category}}">{{category}}</option>
+      </select>
+    </div>
+    <button type="submit" class="btn btn-primary">Create</button>
+  </form>
+</div>
